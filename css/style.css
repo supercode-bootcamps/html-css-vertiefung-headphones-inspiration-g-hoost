@@ -296,3 +296,51 @@ nav ul li:nth-of-type(even)::before {
 .cont-phones a {
     text-decoration: none;
 }
+/* CONTACT */
+
+#split-section.contact {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+#split-section h2 {
+    text-align: center;
+    margin: 8rem auto;
+    font-weight: 200;
+}
+
+#split-section form {
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    font-weight: 200;
+}
+.form-div {
+    margin: 0 0 0 -13rem;
+    display: table;
+}
+.form-div label {
+    display: block;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.form-div input,
+.form-div button {
+    display: block;
+    height: 2rem;
+    width: 20rem;
+    border-radius: .5rem;
+    align-self: center;
+}
+.form-div input:nth-of-type(2) {
+    background-color: #ebccc2;
+}
+.form-div h4 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.form-div input:nth-of-type(3) {
+    width: 20rem;
+    height: 10rem;
+}

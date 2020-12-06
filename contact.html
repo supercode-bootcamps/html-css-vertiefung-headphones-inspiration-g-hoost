@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt Name</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        header ul li a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            opacity: .8;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color:#2E2E2E;
+            opacity: 1;
+            z-index: 8;
+        }
+
+        @font-face {
+
+            /* work-sans-regular - latin */
+            @font-face {
+                font-family: "Work Sans";
+                font-style: normal;
+                font-weight: 400;
+                src: url("../fonts/work-sans-v8-latin-regular.eot");
+                /* IE9 Compat Modes */
+                src: local(""),
+                    url("../fonts/work-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"),
+                    /* IE6-IE8 */
+                    url("../fonts/work-sans-v8-latin-regular.woff2") format("woff2"),
+                    /* Super Modern Browsers */
+                    url("../fonts/work-sans-v8-latin-regular.woff") format("woff"),
+                    /* Modern Browsers */
+                    url("../fonts/work-sans-v8-latin-regular.ttf") format("truetype"),
+                    /* Safari, Android, iOS */
+                    url("../fonts/work-sans-v8-latin-regular.svg#WorkSans") format("svg");
+                /* Legacy iOS */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.svg" alt="logo" />
+        <ul>
+            <li><a href="#">Subscribe and Contact</a></li>
+            <li><a href="www.facebook.com">facebook</a></li>
+            <li><a href="www.twitter.com">Twitter</a></li>
+            <li><a href="www.youtube.com">Youtube</a></li>
+            <li><a href="#">DE</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">ABOUT</a></li>
+            <li></li>
+            <li><a href="lounger.html">LOUNGER</a></li>
+            <li></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li></li>
+            <li><a href="inspiration.html">INSPIRATION</a></li>
+            <li></li>
+            <li><a href="shop.html">SHOP</a></li>
+        </ul>
+    </nav>
+    <section id="split-section">
+        <div class="contact">
+            <h2>Subscribe to our newsletter and always know what's hot at B & O:</h2>
+            <div class="form-div">
+                <label for="name">Enter your name here:</label><br>
+                <input type="text" name="name" id="name" placeholder="Surname, Name"><br>
+                <label for="email">Enter your E-Mail address here:</label><br>
+                <input type="email" name="email" id="email" placeholder="Your E-Mail"><br>
+                <button type="submit" value="Submit">Submit</button><br>
+                <h4>Just want to say hello or ask us a question?</h4>
+                <input type="text">
+                <button type="submit" value="Submit">Submit</button><br>
+            </div>
+        </div>
+
+        <img src="img/ETC_6.webp" alt="bubbles" />
+    </section>
+
+    </section>
+</body>
+
+</html>
