@@ -78,13 +78,12 @@ nav {
 }
 nav ul li {
     display: flex;
-    z-index: 89;
 }
 nav ul li a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color:white;
+    color: #fff;
     opacity: .3;
     z-index: 8;
 }
@@ -95,7 +94,7 @@ nav ul li:nth-of-type(odd)::before {
     display: inline-block;
     content: '';
     width: .7rem;
-    border: 1.2px solid white;
+    border: 1.2px solid #fff;
     border-radius: 50%;
     margin: 1px 3rem 5px 0;
     color: white;
@@ -103,12 +102,12 @@ nav ul li:nth-of-type(odd)::before {
 }
 nav ul li:nth-of-type(even)::before {
     content: '';
-    border: 1px solid white;
+    border: 1px solid #fff;
     height: 3rem;
     margin: .4rem .4rem;
-    opacity: .5;
+    opacity: .4;
 }
-/* CONTAINER */
+/* SPLIT-SECTION */
 .container {
     display: flex;
     width: 70%;
@@ -122,7 +121,7 @@ nav ul li:nth-of-type(even)::before {
     margin-right: 2rem;
 }
 .container p {
-    color: white;
+    color: #fff;
 }
 .container div {
     display: block;
@@ -135,7 +134,7 @@ nav ul li:nth-of-type(even)::before {
 #split-section {
     width: 100vw;
     height: 97vh;
-    background-color: white;
+    background-color: #fff;
 }
 #split-section img {
     position: relative;
@@ -147,7 +146,7 @@ nav ul li:nth-of-type(even)::before {
 #split-section div {
     position: absolute;
     width: 40%;
-    height: 920px;
+    height: 100vh;
     background-color: #2E2E2E;
     right: 0;
     left: 60%;
@@ -164,10 +163,126 @@ nav ul li:nth-of-type(even)::before {
     margin-bottom: 8rem;
 }
 #split-section div p {
-    color: white;
+    color: #fff;
     font-weight: 200;
     width: 30rem;
     line-height: 1.6rem;
     opacity: .5;
     margin-bottom: 1rem;
+}
+/* INSPIRATION */
+
+.video {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: 10rem auto 7rem auto;
+}
+.inspiration-1 {
+    position: absolute;
+    display: block;
+    margin: 9rem auto;
+    font-weight: 200;
+}
+.inspiration-1 h2, .inspiration-1 h3 {
+    color: #ebccc2;
+    font-weight: 200;
+}
+.inspiration-1 h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-stretch: expanded;
+}
+.inspiration-1 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.inspiration-2 {
+    display: block;
+    width: 40rem;
+    margin: 2rem 0 0 22%;
+}
+.inspiration-2 p {
+    font-weight: 100;
+    color: #fff;
+    opacity: .5;
+    font-size: .8rem;
+    margin-bottom: 10rem;
+}
+#full-width-section button {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color:  #fff;
+    border: 1px solid #fff;
+    border-radius: .2rem;
+    opacity: .5;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.inspi-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 22.5rem);
+    grid-template-columns: 22.5rem 22.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.inspi-grid img {
+    width: 22.5rem;
+    height: auto;
+}
+.inspi-grid img:first-of-type {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    object-fit: contain;
+}
+.inspi-grid img:last-of-type {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    object-fit: contain;
+}
+.inspi-contain {
+    width: 90%;
+    margin-left: 1rem;
+}
+.inspi-contain p {
+    opacity: .8;
+    font-size: .8rem;
+    color: #fff;
+    line-height: 1.2rem;
+}
+/* SHOP */
+#split-section .cont-phones {
+    margin: 0 auto;
+    width: 40%;
+}
+#split-section .phones {
+    display: block;
+    width: 30rem;
+    height: auto;
+    margin-top: 7rem;
+    justify-self: center;
+}
+.cont-phones h1, .cont-phones p, .cont-phones button {
+    text-align: center;
+}
+.cont-phones p {
+    margin-top: 1rem;
+}
+.cont-phones button {
+    display: block;
+    margin: 0 auto;
+    background-color: #ebccc2;
+    color: black;
+    width: 4rem;
+    height: 2rem;
+    border-radius: .2rem;
+    border-style: none;
+}
+.cont-phones a {
+    text-decoration: none;
+}
+#split-section .cont-phones p {
+    top: 0;
 }
