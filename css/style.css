@@ -45,7 +45,7 @@ header ul {
 header ul li a {
     display: inline-block;
     text-decoration: none;
-    color: #ebccc2;
+    color: #867772;
     opacity: .5;
     margin: 0 1rem;
 }
@@ -61,6 +61,7 @@ section > h1 {
     top: 20%;
 }
 header ul li a:hover {
+    color: #ebccc2;
     opacity: 1;
     transition: 1s ease-in-out;
 }
@@ -110,7 +111,7 @@ nav ul li:nth-of-type(even)::before {
 /* SPLIT-SECTION */
 .container {
     display: flex;
-    width: 70%;
+    width: 75%;
     height: 37.5rem;
     margin: 6rem auto;
     font-weight: 200;
@@ -118,16 +119,20 @@ nav ul li:nth-of-type(even)::before {
 .container img {
     height: 30rem;
     width: auto;
-    margin-right: 2rem;
 }
 .container p {
     color: #fff;
 }
 .container div {
     display: block;
-    margin: 7rem 3rem 0rem 4rem;
+    margin: 7rem 0 0 3rem;
     opacity: .5;
     line-height: 1.6rem;
+    width: 70%;
+}
+.container div h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 /* LOUNGER */
@@ -179,9 +184,8 @@ nav ul li:nth-of-type(even)::before {
     margin: 10rem auto 7rem auto;
 }
 .inspiration-1 {
-    position: absolute;
     display: block;
-    margin: 9rem auto;
+    margin: 18rem auto;
     font-weight: 200;
 }
 .inspiration-1 h2, .inspiration-1 h3 {
@@ -190,12 +194,16 @@ nav ul li:nth-of-type(even)::before {
 }
 .inspiration-1 h3 {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-stretch: expanded;
 }
 .inspiration-1 h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
+}
+.inspiration-1 p {
+    color: #ebccc2;
+    opacity: .8;
 }
 .inspiration-2 {
     display: block;
@@ -206,7 +214,7 @@ nav ul li:nth-of-type(even)::before {
     font-weight: 100;
     color: #fff;
     opacity: .5;
-    font-size: .8rem;
+    font-size: 1rem;
     margin-bottom: 10rem;
 }
 #full-width-section button {
@@ -245,12 +253,13 @@ nav ul li:nth-of-type(even)::before {
 .inspi-contain {
     width: 90%;
     margin-left: 1rem;
+    opacity: .8;
 }
 .inspi-contain p {
     opacity: .8;
-    font-size: .8rem;
+    font-size: 1rem;
     color: #fff;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
 }
 /* SHOP */
 #split-section .cont-phones {
@@ -264,11 +273,15 @@ nav ul li:nth-of-type(even)::before {
     margin-top: 7rem;
     justify-self: center;
 }
-.cont-phones h1, .cont-phones p, .cont-phones button {
+#split-section .cont-phones h1, .cont-phones p, .cont-phones button {
     text-align: center;
+    margin-bottom: .5rem;
 }
-.cont-phones p {
-    margin-top: 1rem;
+#split-section .cont-phones p {
+    top: 0;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 .cont-phones button {
     display: block;
@@ -282,7 +295,4 @@ nav ul li:nth-of-type(even)::before {
 }
 .cont-phones a {
     text-decoration: none;
-}
-#split-section .cont-phones p {
-    top: 0;
 }
